@@ -1,0 +1,117 @@
+*{
+    margin:0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 1260px;
+}
+header{
+    color:black;
+    background-color: rgb(242, 217, 243);
+    text-align: center;
+    border-radius:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#imagen{
+    width:150px;
+    vertical-align: middle;
+    display:inline-block;
+}
+#titulo{
+    vertical-align: middle;
+    display:inline-block;
+    width: 380px;
+    font-size: 3em; /*48px*/
+}
+img{
+    width:100%;
+}
+
+aside{
+    cursor:pointer;
+    width:313px; /*Le quito dos pixeles del borde*/
+    display: inline-block;
+    vertical-align: top;
+    min-height: 500px;
+    border:1px rgb(199, 243, 228) solid;
+}
+div#contenido{ 
+    padding:50px;
+    min-height:400px;
+    width:845px;
+    display: inline-block;
+    background-color: rgb(211, 241, 231);
+}
+main aside div{
+    padding: 20px;
+    text-align: center;
+    border-bottom:1px rgb(199, 243, 228) solid;
+ 
+}
+main aside div:hover{
+    background-color:rgb(206, 43, 198);
+    color:white;
+}
+
+input[type="text"]{
+    margin-bottom:5px;/*Entre input y texto 5px*/
+    padding-left:20px;/*Empieza a escribir en el input 20px a la derecha.*/
+    margin-top:0.5em;/* 8px de espacio entre input y texto por la parte de arriba del input*/
+    width: 780px; /* Realmente quiero coger todo el espacio disponible para este input*/
+}
+select{
+    cursor:pointer;
+    margin-top:0.5em;
+    width:802px;
+    padding-left:20px;
+}
+div#realizacion, div#inscripcion{
+    margin-top:20px;
+    width:400px;
+    display:inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+/* No necesita display:inline-block*/
+div#publicacion{
+    margin-top:20px;
+    width:400px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div#realizacion  input, div#inscripcion  input , div#publicacion input{
+    margin: 20px 10px auto;
+    cursor:pointer;
+} 
+
+div#botones{
+    width:800px;
+    margin-left: 0;
+    margin-top:70px;
+}
+/*elementos inline-block y border box*/
+div#botones button{
+    border: none;
+    cursor:pointer;
+    height: 30px;
+    width:200px;
+    margin-left: 50px; /*200px de espacio lo reparto entre 4 espacios para que se estructuren en el centro*/
+   
+}
+div#botones button:hover{
+    filter: saturate(4); /*Se satura al pasar el raton*/
+}
+div#botones button#uno{
+    background-color: rgb(240, 160, 160);
+}
+div#botones button#dos{
+    background-color: rgb(240, 239, 160);
+}
+div#botones button#tres{
+    background-color: rgb(160, 240, 160);
+}
+/* los botones tienen por defecto border box*/
+/* Los select tambien son border box*/
