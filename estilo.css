@@ -59,12 +59,12 @@ input[type="text"]{
     margin-bottom:5px;/*Entre input y texto 5px*/
     padding-left:20px;/*Empieza a escribir en el input 20px a la derecha.*/
     margin-top:0.5em;/* 8px de espacio entre input y texto por la parte de arriba del input*/
-    width: 780px; /* Realmente quiero coger todo el espacio disponible para este input*/
+    width: 776px; /* Realmente quiero coger todo el espacio disponible para este input menos los bordes por defecto*/
 }
 select{
     cursor:pointer;
     margin-top:0.5em;
-    width:802px;
+    width:800px;
     padding-left:20px;
 }
 div#realizacion, div#inscripcion{
