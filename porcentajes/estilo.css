@@ -15,10 +15,15 @@ header{
     border-radius:5px;
     padding:0.625em 0px; /* 0.625em = 10px/16px*/
 }
-#imagen{
+#imagen1{
     width:11.9048%; /* 150px /1260px * 100 = 11.9048% */
     vertical-align: middle;
     display:inline-block;
+}
+#imagen2{
+    width:11.9048%; /* 150px /1260px * 100 = 11.9048% */
+    vertical-align: middle;
+    display:none;
 }
 #titulo{
     vertical-align: middle;
@@ -148,3 +153,38 @@ div#botones button#tres{
 }
 /* los botones tienen por defecto border box*/
 /* Los select tambien son border box*/
+
+@media (max-width: 430px) {
+    main aside{
+        display:none;
+    }
+    main div#contenido{
+        display:block;
+    }
+    main div#contenido #textarea label{
+        margin-top:10px;
+    }
+    #titulo{
+        font-size:2em;
+    }
+}
+@media (max-width:780px){
+    main aside{
+        display:none;
+    }
+    main div#contenido{
+        display:block;
+    }
+    #titulo{
+        width:60.1587%;
+    }
+    #imagen2{
+        display:inline-block;
+        cursor:pointer;
+    }
+    #imagen1{
+    
+        display:none;
+    }      
+}
+  
